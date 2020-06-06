@@ -5,7 +5,7 @@ const SpotifyWebApi = require('spotify-web-api-node');
 require('dotenv').config();
 
 const path = require("path");
-app.use(cors);
+app.use(cors());
 
 var spotifyApi = new SpotifyWebApi({
     clientId: process.env.CLIENT_ID,
